@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>julife</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Julife</a>
+            <div class="toggle"></div>
+        </header>
+        <div class="glass"></div>
+        <div class="content">
+            <h2>Julife<br/>
+                <span>Life in Jungle</span>
+            </h2>
+        </div>
+        <video src="video.mp4" autoplay muted loop></video>
+        <ul class="social__handles">
+            <li style="--i:1"><a href="#">Facebook</a></li>
+            <li style="--i:2"><a href="#">Twitter</a></li>
+            <li style="--i:3"><a href="#">Instagram</a></li>
+        </ul>
+        <ul class="nav__list">
+            <li style="--i:1" class="nav__item">
+                <a href="#">Home</a>
+            </li>
+            <li style="--i:2" class="nav__item">
+                <a href="#">About</a>
+            </li>
+            <li style="--i:3" class="nav__item">
+                <a href="#">Tour</a>
+            </li>
+            <li style="--i:4" class="nav__item">
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </section>
+
+<script>
+    const toggleMenu = document.querySelector('.toggle')
+    const Section = document.querySelector('section')
+    toggleMenu.addEventListener('click', () => {
+        toggleMenu.classList.toggle('toggle--active')
+        Section.classList.toggle('toggle--active')
+    })
+</script>
+</body>
+</html>
