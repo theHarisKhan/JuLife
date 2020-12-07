@@ -10,9 +10,73 @@
     <section>
         <header>
             <a href="#" class="logo">Julife</a>
-            <div class="toggle"></div>
+            <div class="Navmenu">
+                <ul class="nav__list">
+                    <li style="--i:1" class="nav__item">
+                        <a href="#" class="home">Home</a>
+                    </li>
+                    <li style="--i:2" class="nav__item">
+                        <a href="#" class="about">About</a>
+                    </li>
+                    <li style="--i:3" class="nav__item">
+                        <a href="#" class="tour">Tour</a>
+                    </li>
+                    <li style="--i:4" class="nav__item">
+                        <a href="#" class="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </header>
-        <div class="glass"></div>
+        <div class="glass">
+            <div class="about__block">
+                <div class="about__content">
+                    <h1 class="about__title">Julife</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                        Similique voluptas recusandae, vero excepturi ab voluptatem 
+                        modi facere labore repudiandae laudantium laborum temporibus 
+                        unde repellat omnis quam earum culpa. Soluta quis eius 
+                        consequuntur magnam necessitatibus ab cum similique delectus 
+                        et iusto.
+                    </p>
+                </div>
+                <div class="about__img"></div>
+            </div>
+        </div>
+        <div class="Tour__glass">
+            <div class="Tour__cards">
+                <div class="card__block">
+                    <h3 class="card__headline">Arizona</h3>
+                    <div class="card__info">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Placeat eaque suscipit quasi modi omnis cumque!
+                        </p>
+                        <a href="#" class="btn">ReadMore</a>
+                    </div>
+                </div>
+                <div class="card__block">
+                    <h3 class="card__headline">Madgascar</h3>
+                    <div class="card__info">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Placeat eaque suscipit quasi modi omnis cumque!
+                        </p>
+                        <a href="#" class="btn">ReadMore</a>
+                    </div>
+                </div>
+                <div class="card__block">
+                    <h3 class="card__headline">Africa</h3>
+                    <div class="card__info">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                            Placeat eaque suscipit quasi modi omnis cumque!
+                        </p>
+                        <a href="#" class="btn">ReadMore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="content">
             <h2>Julife<br/>
                 <span>Life in Jungle</span>
@@ -20,33 +84,18 @@
         </div>
         <video src="video.mp4" autoplay muted loop></video>
         <ul class="social__handles">
-            <li style="--i:1"><a href="#">Facebook</a></li>
-            <li style="--i:2"><a href="#">Twitter</a></li>
-            <li style="--i:3"><a href="#">Instagram</a></li>
-        </ul>
-        <ul class="nav__list">
-            <li style="--i:1" class="nav__item">
-                <a href="#">Home</a>
-            </li>
-            <li style="--i:2" class="nav__item">
-                <a href="#">About</a>
-            </li>
-            <li style="--i:3" class="nav__item">
-                <a href="#">Tour</a>
-            </li>
-            <li style="--i:4" class="nav__item">
-                <a href="#">Contact</a>
-            </li>
+            <li style="--i:1"><a href="#">
+                <img src="icons/Facebook.png" alt=""/>
+            </a></li>
+            <li style="--i:2"><a href="#">
+                <img src="icons/Instagram.png" alt=""/>
+            </a></li>
+            <li style="--i:3"><a href="#">
+                <img src="icons/Twitter.png" alt=""/>
+            </a></li>
         </ul>
     </section>
 
-<script>
-    const toggleMenu = document.querySelector('.toggle')
-    const Section = document.querySelector('section')
-    toggleMenu.addEventListener('click', () => {
-        toggleMenu.classList.toggle('toggle--active')
-        Section.classList.toggle('toggle--active')
-    })
-</script>
+<script src="script.js"></script>
 </body>
 </html>
